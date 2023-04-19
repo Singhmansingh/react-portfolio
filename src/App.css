@@ -1,0 +1,153 @@
+.logo-feature {
+    box-shadow: 0px 0px 83px 13px rgba(69, 73, 85, 0.35);
+}
+
+.nav-logo {
+    display: grid;
+    place-items: center;
+}
+
+.nav-logo img {
+    max-width: 50px;
+}
+
+.wrapper {
+    max-width: 1280px;
+    margin: auto;
+}
+
+p.sm {
+    font-size: 0.8em;
+    line-height: 2;
+}
+
+header {
+    display: flex;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    padding-top: 1em;
+}
+
+nav {
+    display: flex;
+    place-items: center;
+}
+
+
+nav ul {
+    display: flex;
+    gap: 1em;
+    margin: 0;
+}
+
+nav ul li {
+    flex-shrink: 1;
+
+}
+
+
+#landing {
+    color: var(--white-color);
+    min-height: 90vh;
+    background: linear-gradient(180deg, var(--primary-color) 91.47%, rgba(217, 217, 217, 0) 100%);
+    display: grid;
+    place-items: center;
+    padding-bottom: 30px;
+}
+
+#landing > .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#landing > .wrapper > * {
+    flex: 1;
+}
+
+
+.logo-lg {
+    display: flex;
+    justify-content: center;
+    filter: drop-shadow(0 0 20px black);
+}
+
+.logo-lg img {
+    max-width: 400px;
+}
+
+
+#myVision,#myMission {
+    margin: 20vh unset;
+}
+
+
+.carousel {
+    display: flex;
+    height: 150px;
+}
+
+.carousel-item {
+    height: 100%;
+    background-color: red;
+    width: 250px;
+    background-size: cover;
+    transition: all linear 5s;
+    background-position: center;
+}
+
+
+/***********************/
+
+.logo-icon-grid {
+    display: flex;
+    grid-auto-flow: column;
+    place-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 70px 0;
+}
+.logo-icon {
+    flex-shrink: 1;
+    flex-basis: 25%;
+    display: grid;
+    place-items: center;
+}
+
+.logo-icon img {
+    width: 150px;
+    transition: all ease 500ms;
+}
+
+.logo-icon img:hover {
+    transform: scale(1.15);
+}
+
+.slide {
+    min-height: min(750px, 60vh);
+    display: flex;
+}
+
+.slide-image {
+    flex:3;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.slide-content {
+    flex: 2;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: 4em 3em;
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: space-between;
+
+}
