@@ -128,7 +128,7 @@ nav ul li {
 }
 
 .slide {
-    min-height: min(750px, 60vh);
+    min-height: 500px;
     display: flex;
 }
 
@@ -146,8 +146,27 @@ nav ul li {
     color: var(--white-color);
     padding: 4em 3em;
     display: flex;
-    
     flex-direction: column;
     justify-content: space-between;
 
+}
+
+.btn-paginate {
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    border: none;
+    background-color: red;
+}
+
+.active {
+    background: var(--primary-color) !important;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    padding: 0.8em;
 }
