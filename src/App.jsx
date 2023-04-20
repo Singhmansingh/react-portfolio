@@ -3,6 +3,7 @@ import Navbar from './components/Navbar'
 import Landing from './sections/Landing'
 import About from './sections/About'
 import Projects from './sections/Projects'
+import { Contact } from './sections/Contact'
 
 
 
@@ -37,7 +38,9 @@ function App() {
         <Landing id={'landing'}/>
         <About id={'about'}/>
         <Projects id={'projects'}/>
+        <Contact id={'contact'}/>
       </main>
+      <footer>Copyright Shavin Singh, 2023</footer>
     </div>
   )
 }

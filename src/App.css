@@ -7,12 +7,13 @@
     place-items: center;
 }
 
+
 .nav-logo img {
     max-width: 50px;
 }
 
 .wrapper {
-    max-width: 1280px;
+    max-width: 1080px;
     margin: auto;
 }
 
@@ -119,7 +120,7 @@ nav ul li {
 }
 
 .logo-icon img {
-    width: 150px;
+    width: 100px;
     transition: all ease 500ms;
 }
 
@@ -128,7 +129,7 @@ nav ul li {
 }
 
 .slide {
-    min-height: 500px;
+    min-height: 600px;
     display: flex;
 }
 
@@ -152,11 +153,11 @@ nav ul li {
 }
 
 .btn-paginate {
-    width: 2em;
-    height: 2em;
+    width: 1.75em;
+    height: 1.75em;
     border-radius: 50%;
     border: none;
-    background-color: red;
+    background-color: rgb(224, 224, 224);
 }
 
 .active {
@@ -169,4 +170,82 @@ nav ul li {
     align-items: center;
     gap: 1em;
     padding: 0.8em;
+}
+
+.btn-paginate:hover {
+    cursor: pointer;
+}
+
+.spaced {
+    margin-top: 20vh !important;
+    margin-bottom: 15vh !important;
+}
+
+.spaced-sm {
+    margin-top: 10vh !important;
+    margin-bottom: 10vh !important;
+}
+
+.spaced-btm {
+    margin-bottom: 20vh !important;
+}
+
+.banner {
+    background-color: var(--primary-color);
+    padding: 1.5em 0;
+    color: var(--white-color);
+    display: block;
+    text-align: center;
+    margin: 2em 0;
+
+}
+
+.banner-link {
+    font-size: 2em;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Unbounded';
+}
+
+.form-set {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-label {
+    font-size: 0;
+}
+
+.form-input {
+    background-color: var(--white-color);
+    border: none;
+    padding: 1em;
+    border-radius: 0.2em;
+    font-family: inherit;
+    font-size: 0.8em;
+}
+
+textarea.form-input {
+    resize:vertical;
+    min-height: 6em;
+    max-height: 20em;
+}
+
+.contact-form {
+    display: grid;
+    grid-template-areas: 
+        "fname org"
+        "email phone"
+        "subject subject"
+        "message message"
+        "button button"
+    ;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    row-gap: 1.5em;
+}
+
+.form-send {
+    display:flex;
+    justify-content: flex-end;
 }

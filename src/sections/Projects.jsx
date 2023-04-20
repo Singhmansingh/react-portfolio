@@ -32,15 +32,23 @@ export default function Projects(props){
 
     return (
         <section id={props.id}>
-            <div class="wrapper">
-                <h2>My Projects</h2>
-            </div>
-            <div class="project-slides">
-                <ProjectSlide title={DATA[index].title} description={DATA[index].description}/>
-            </div>
-            <div class="pagination">
-            {pagination()}
-                
+            <div class="spaced">
+                <div class="wrapper">
+                    <h2>My Projects</h2>
+                </div>
+                <div class="project-slides">
+                    <ProjectSlide title={DATA[index].title} description={DATA[index].description}/>
+                </div>
+                <div class="pagination">
+                {pagination()}
+                </div>
+                <div class="wrapper spaced-sm">
+                    <h2>My Collection</h2>
+                    <p>Discover my collection of utilities exclusively designed to enrich your <strong>Tabletop Roleplaying (TTRPG)</strong> experience for a variety of game systems from <strong>Blades in the Dark</strong> to <strong>Honey Heist.</strong></p>
+                </div>
+                <div className="banner">
+                    <a className="banner-link" href="http://singhmansingh.games/">Singhmansingh.games</a>
+                </div>
             </div>
         </section>
     )

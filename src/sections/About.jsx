@@ -28,7 +28,7 @@ export default function About(props){
     ]
 
     return(
-        <section id={props.id}>
+        <section id={props.id} className="spaced">
             <div id="myVision">
                 <div className="wrapper">
 
@@ -39,7 +39,7 @@ export default function About(props){
                 </div>
                 <Carousel items={items}/>
             </div>
-        <div id="myMission" class="wrapper">
+        <div id="myMission" className="wrapper spaced">
 
             <p className="subtitle">My Mission</p>
                 <h2>Drive Innovation through Continuous Learning</h2>
