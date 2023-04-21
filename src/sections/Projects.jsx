@@ -11,6 +11,7 @@ export default function Projects(props){
             var res = await fetch('https://console.shavinsingh.tech/api/projects');
             var data = await res.json();
             setProjects(data);
+
         }
 
         getProjects();
@@ -39,7 +40,7 @@ export default function Projects(props){
                 <div class="project-slides">
                     {
                         projects.length > 0 ?
-                        <ProjectSlide title={projects[index]?.title} content={projects[index]?.content} image={projects[index]?.image}/>
+                        <ProjectSlide title={projects[index]?.title} content={projects[index]?.content} image={projects[index]?.image} url={projects[index]?.url}/>
                         : null
                     }
                 </div>

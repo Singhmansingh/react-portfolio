@@ -3,7 +3,7 @@ export default function Landing(props){
         <section id={props.id}>
             <div className="wrapper">
                 <div className="logo-lg">
-                    <img src="https://avatars.githubusercontent.com/u/64917885?v=4"/>  
+                    <img src="/assets/logo.svg"/>  
                 </div>
                 <div>
                     <p className="sm subtitle">Hi, I'm</p>

@@ -12,6 +12,7 @@ function App() {
 
   const NAVBAR = [
     {
+      title: "Home",
       id:"landing",
       element: function () { return <Landing id={this.id}/> }
     },
@@ -45,7 +46,7 @@ function App() {
   return (
     <div className="App">
       <header>
-        <div className="nav-logo"><img src="https://avatars.githubusercontent.com/u/64917885?v=4"/></div>
+        <div><a href="#" className="nav-logo"><img src="/assets/logo.svg"/><span className="subtitle">Shavin Singh</span></a></div>
         <Navbar locations={NAVBAR}/>
       </header>
       <main>

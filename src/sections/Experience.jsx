@@ -20,7 +20,7 @@ export function Experience(props){
         return month + ' ' + year;
     }
     return (
-        <section id={props.id} className="wrapper spaced">
+        <section id={props.id} className="wrapper spaced-btm">
             <h2>My Experience</h2>
             <div className="card-grid">
                 {

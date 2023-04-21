@@ -9,7 +9,14 @@
   --primary-color: #454955;
   --secondary-color: #F09D51;
   --white-color: #F3EFF5;
+  --highlight-color: #838aa1;
   color: var(--primary-color);
+}
+
+@media screen and (max-width: 1000px) {
+  :root {
+    font-size: 18px;
+  }
 }
 
 body {
@@ -67,4 +74,9 @@ footer {
   font-size: 0.65em;
   text-align: center;
   margin-top: 2em;
+}
+
+p.sm {
+  font-size: 0.8em;
+  line-height: 2;
 }

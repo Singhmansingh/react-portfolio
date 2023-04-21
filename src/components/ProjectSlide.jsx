@@ -5,7 +5,7 @@ export default function ProjectSlide(props){
             <div className="slide-content">
                 <h3>{props.title}</h3>
                 <p>{props.content}</p>
-                <div className="slide-button"><a href={props.url} className="btn">Visit</a></div>
+                <div className="slide-button"><a href={props.url} target="_blank" className="btn">Visit</a></div>
             </div>
         </div>
     );

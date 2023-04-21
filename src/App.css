@@ -3,8 +3,12 @@
 }
 
 .nav-logo {
-    display: grid;
-    place-items: center;
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    text-decoration: none;
+    filter: drop-shadow(0 0 3px var(--highlight-color));
+
 }
 
 .btn {
@@ -38,12 +42,10 @@
 .wrapper {
     max-width: 1080px;
     margin: auto;
+    padding: 0 1em;
 }
 
-p.sm {
-    font-size: 0.8em;
-    line-height: 2;
-}
+
 
 header {
     display: flex;
@@ -82,6 +84,7 @@ nav ul li {
     padding-bottom: 30px;
 }
 
+
 #landing > .wrapper {
     display: flex;
     justify-content: center;
@@ -93,15 +96,25 @@ nav ul li {
     flex: 1;
 }
 
+@media screen and (max-width: 1000px) {
+    #landing > .wrapper {
+        flex-wrap: wrap;
+        gap: 2em;
+        text-align: center;
+    }
+
+}
+
+
 
 .logo-lg {
     display: flex;
     justify-content: center;
-    filter: drop-shadow(0 0 20px black);
+    filter: drop-shadow(0 0 10px var(--highlight-color));
 }
 
 .logo-lg img {
-    max-width: 400px;
+    max-width: min(400px, 70vw);
 }
 
 
@@ -109,6 +122,8 @@ nav ul li {
     margin: 20vh unset;
 }
 
+
+/** [Unused] Moving Carousel*/
 
 .carousel {
     display: flex;
@@ -139,6 +154,9 @@ nav ul li {
     justify-content: center;
     margin: 70px 0;
 }
+
+
+
 .logo-icon {
     flex-shrink: 1;
     flex-basis: 25%;
@@ -146,9 +164,20 @@ nav ul li {
     place-items: center;
 }
 
+
+
 .logo-icon img {
-    width: 100px;
+    width: 125px;
     transition: all ease 500ms;
+}
+
+@media screen and (max-width: 1000px) {
+    .logo-icon-grid {
+        row-gap: 1em;
+    }
+    .logo-icon img {
+        width: 5em;
+    }   
 }
 
 .logo-icon img:hover {
@@ -156,7 +185,7 @@ nav ul li {
 }
 
 .slide {
-    height: 500px;
+    max-height: 500px;
     display: flex;
 }
 
@@ -170,6 +199,22 @@ nav ul li {
     height: 100%;
     width: 100%;
     object-fit: cover;
+}
+
+@media screen and (max-width: 1000px) {
+    .slide {
+        max-height: unset;
+        flex-direction: column;
+
+    }
+    .slide-image img {
+        height: 450px;
+    }
+
+    .slide-content {
+        font-size: 0.95em;
+
+    }
 }
 
 .slide-content {
@@ -238,6 +283,12 @@ nav ul li {
     font-family: 'Unbounded';
 }
 
+@media screen and (max-width: 1000px) {
+    .banner-link {
+        font-size: 1.3em;
+    }
+}
+
 .form-set {
     display: flex;
     flex-direction: column;
@@ -286,6 +337,12 @@ textarea.form-input {
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 1em;
+}
+
+@media screen and (max-width: 1000px) {
+    .card-grid {
+        grid-template-columns: repeat(1,1fr);
+    }
 }
 
 .card {
