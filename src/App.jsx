@@ -22,17 +22,18 @@ function App() {
 
     },
     {
-      title: "Experience",
-      id:"experience",
-      element: function () { return <Experience id={this.id}/> }
-
-    },
-    {
       title: "Projects",
       id:"projects",
       element: function () { return <Projects id={this.id}/> }
 
     },
+    {
+      title: "Experience",
+      id:"experience",
+      element: function () { return <Experience id={this.id}/> }
+
+    },
+
     {
       title: "Contact",
       id:"contact",
