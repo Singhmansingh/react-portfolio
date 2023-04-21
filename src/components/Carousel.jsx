@@ -13,11 +13,11 @@ export function CarouselItem(props){
     const [position,setPosition]=useState(0);
     const width = 250;
     const transitionSpeed = 5000;
-    const disabled = true;
-    setInterval(()=> {
-        setPosition(position + 1);
-        console.log("tick");
-    },transitionSpeed);
+    const disabled = false;
+    // setInterval(()=> {
+    //     setPosition(position + 1);
+    //     console.log("tick");
+    // },transitionSpeed);
 
     return(
         <div className="carousel-item" 

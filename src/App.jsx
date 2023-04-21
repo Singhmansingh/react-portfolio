@@ -4,6 +4,7 @@ import Landing from './sections/Landing'
 import About from './sections/About'
 import Projects from './sections/Projects'
 import { Contact } from './sections/Contact'
+import { Experience } from './sections/Experience'
 
 
 
@@ -11,20 +12,32 @@ function App() {
 
   const NAVBAR = [
     {
-      title: "about",
-      id:"about"
+      id:"landing",
+      element: function () { return <Landing id={this.id}/> }
     },
     {
-      title: "projects",
-      link: "http://singhmansingh.games",
+      title: "About",
+      id:"about",
+      element: function () { return <About id={this.id}/> }
+
     },
     {
-      title: "experience",
-      id:"experience"
+      title: "Experience",
+      id:"experience",
+      element: function () { return <Experience id={this.id}/> }
+
     },
     {
-      title: "contact",
-      id:"contact"
+      title: "Projects",
+      id:"projects",
+      element: function () { return <Projects id={this.id}/> }
+
+    },
+    {
+      title: "Contact",
+      id:"contact",
+      element: function () { return <Contact id={this.id}/> }
+
     },
   ]
 
@@ -35,10 +48,14 @@ function App() {
         <Navbar locations={NAVBAR}/>
       </header>
       <main>
-        <Landing id={'landing'}/>
+        {/* <Landing id={'landing'}/>
         <About id={'about'}/>
         <Projects id={'projects'}/>
-        <Contact id={'contact'}/>
+        <Experience id={'experience'} />
+        <Contact id={'contact'}/> */}
+      {
+        NAVBAR.map(section => section.element())
+      }
       </main>
       <footer>Copyright Shavin Singh, 2023</footer>
     </div>

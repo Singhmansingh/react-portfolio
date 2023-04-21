@@ -1,24 +1,24 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import ProjectSlide from "../components/ProjectSlide";
 
 export default function Projects(props){
 
-    const [index, setIndex] = useState(1);
-    const DATA = [
-        {
-            title: "Don't Get Got! Online",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer imperdiet convallis nisi, nec volutpat tellus dictum eget. Sed pellentesque nisl pulvinar finibus euismod. Pellentesque nec pellentesque felis. Etiam semper dapibus ex sit amet venenatis. Pellentesque porttitor tincidunt eleifend semper dapibus ex sit amet venenatis. Pellentesque porttitor tincidunt eleifend."
-        },
-        {
-            title: "10 Candles",
-            description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer imperdiet convallis nisi, nec volutpat tellus dictum eget. Sed pellentesque nisl pulvinar finibus euismod. Pel"
+    const [index, setIndex] = useState(0);
+    const [projects, setProjects] = useState([]);
+
+    useEffect(()=>{
+        async function getProjects(){
+            var res = await fetch('http://console.shavinsingh.tech/api/projects');
+            var data = await res.json();
+            setProjects(data);
         }
-        
-    ]
+
+        getProjects();
+    },[]);
 
     function pagination(){
         var btns=[];
-        for(let i=0; i<DATA.length;i++){
+        for(let i=0; i<projects.length;i++){
             btns.push(<button class={"btn-paginate" + (index == i ? ' active':'')}  onClick={()=>setIndex(i)}></button>);
         }
         return (
@@ -37,7 +37,11 @@ export default function Projects(props){
                     <h2>My Projects</h2>
                 </div>
                 <div class="project-slides">
-                    <ProjectSlide title={DATA[index].title} description={DATA[index].description}/>
+                    {
+                        projects.length > 0 ?
+                        <ProjectSlide title={projects[index]?.title} content={projects[index]?.content} image={projects[index]?.image}/>
+                        : null
+                    }
                 </div>
                 <div class="pagination">
                 {pagination()}
