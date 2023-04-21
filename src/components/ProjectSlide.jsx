@@ -4,7 +4,7 @@ export default function ProjectSlide(props){
 
     function renderSkills(){
         var message;
-        message += props.many_skills.map(skill=> skill.title).join(', ');
+        message = props.many_skills.map((skill, index)=> <><strong>{skill.title}</strong>{ index < props.many_skills.length - 1 ? ', ':''}</> );
         return message;
 
     }
@@ -14,7 +14,7 @@ export default function ProjectSlide(props){
             <div className="slide-content">
                 <h3>{props.title}</h3>
                 <p>{props.content}</p>
-                <p>{renderSkills()}</p>
+                <p>Built with {renderSkills()}</p>
                 <div className="slide-button"><a href={props.url} target="_blank" className="btn">Visit</a></div>
             </div>
         </div>
