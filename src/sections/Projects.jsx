@@ -17,6 +17,7 @@ export default function Projects(props){
         getProjects();
     },[]);
 
+    // renders a pip for each project, clicking on the pip jumps to the selected project
     function pagination(){
         var btns=[];
         for(let i=0; i<projects.length;i++){
@@ -39,8 +40,9 @@ export default function Projects(props){
                 </div>
                 <div class="project-slides">
                     {
+                        // render if projects have been recieved
                         projects.length > 0 ?
-                        <ProjectSlide title={projects[index]?.title} content={projects[index]?.content} image={projects[index]?.image} url={projects[index]?.url}/>
+                        <ProjectSlide  {...projects[index]} />
                         : null
                     }
                 </div>
@@ -52,7 +54,7 @@ export default function Projects(props){
                     <p>Discover my collection of utilities exclusively designed to enrich your <strong>Tabletop Roleplaying (TTRPG)</strong> experience for a variety of game systems from <strong>Blades in the Dark</strong> to <strong>Honey Heist.</strong></p>
                 </div>
                 <div className="banner">
-                    <a className="banner-link" href="http://singhmansingh.games/">Singhmansingh.games</a>
+                    <a className="banner-link" href="http://singhmansingh.games/" target="_blank">Singhmansingh.games</a>
                 </div>
             </div>
         </section>

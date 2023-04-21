@@ -1,5 +1,6 @@
 import LogoIcon from "./LogoIcon";
 
+// grid of LogoIcons
 export default function LogoIconDisplay(props){
     return (
         <div class="logo-icon-grid">

@@ -3,6 +3,8 @@ import { FormInput } from "../components/FormInput";
 import LogoIconDisplay from "../components/LogoIconDisplay";
 
 export function Contact(props){
+
+    // TODO: add socials to backend
     const SOCIALS = [
         {
             title: "Github",
@@ -31,16 +33,17 @@ export function Contact(props){
             <div>
                 <h2>Get Connected</h2>
                 <p>Let's Connect! Drop me a message and let's bring your ideas to life.</p>
-                <form className="contact-form" action="#" method="post">
+                {/** TODO: send form content to Laravel backend */}
+                <form className="contact-form" method="post">
                     <FormInput id="fname" label="Your Name" name="fname"/>
                     <FormInput id="org" label="Organization" name="org"/>
-
                     <FormInput id="email" label="Email" name="email"/>
                     <FormInput id="phone" label="Phone Number" name="phone"/>
                     <FormInput id="subject" label="Subject Line" name="subject"/>
                     <FormInput id="message" label="Message" name="message" rows="5"/>
                     <div style={{gridArea:"button"}} className="form-send">
-                        <input className="btn" type="submit" value={"Send"}/>
+                        {/* <input className="btn" type="submit" value={"Send"}/> */}
+                        <input className="btn" type="button" value={"Send"}/>
                     </div>
                 </form>
             </div>

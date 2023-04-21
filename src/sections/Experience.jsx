@@ -13,6 +13,8 @@ export function Experience(props){
         getExperience();
     },[])
 
+
+    // converts a date string to a common MM YYYY format
     const toDate = date => {
         var newDate = new Date(date).toDateString().split(' ');
         var month = newDate[1];

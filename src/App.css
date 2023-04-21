@@ -1,6 +1,6 @@
-.logo-feature {
-    box-shadow: 0px 0px 83px 13px rgba(69, 73, 85, 0.35);
-}
+/*********************/
+/* NAVIGATION */
+/*********************/
 
 .nav-logo {
     display: flex;
@@ -11,57 +11,10 @@
 
 }
 
-.btn {
-    border: 2px solid #2f2f2f;
-    background-color: #fff;
-    padding: 0.2em 2em;
-    font:inherit;
-    font-size: 0.8em;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.377);
-    font-weight: 600;
-    transform: all ease 250ms;
-    color: var(--primary-color)
-}
-
-.btn:hover {
-    cursor: pointer;
-
-
-}
-
-.btn:active {
-        transform: translate(1px,1px);
-    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.377);
-}
-
-
-.nav-logo img {
-    max-width: 50px;
-}
-
-.wrapper {
-    max-width: 1080px;
-    margin: auto;
-    padding: 0 1em;
-}
-
-
-
-header {
-    display: flex;
-    background-color: var(--primary-color);
-    color: var(--white-color);
-    display: flex;
-    justify-content: space-between;
-    padding: 0 20px;
-    padding-top: 1em;
-}
-
 nav {
     display: flex;
     place-items: center;
 }
-
 
 nav ul {
     display: flex;
@@ -73,6 +26,29 @@ nav ul li {
     flex-shrink: 1;
 
 }
+
+.nav-logo img {
+    max-width: 50px;
+}
+
+/*********************/
+/* LANDING SCREEN */
+/*********************/
+
+.logo-feature {
+    box-shadow: 0px 0px 83px 13px rgba(69, 73, 85, 0.35);
+}
+
+header {
+    display: flex;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    padding-top: 1em;
+}
+
 
 
 #landing {
@@ -117,6 +93,9 @@ nav ul li {
     max-width: min(400px, 70vw);
 }
 
+/*********************/
+/* ABOUT (MISSION, VISION) */
+/*********************/
 
 #myVision,#myMission {
     margin: 20vh unset;
@@ -146,6 +125,8 @@ nav ul li {
 
 /***********************/
 
+/* LOGOICONDISPLAY */
+
 .logo-icon-grid {
     display: flex;
     grid-auto-flow: column;
@@ -155,19 +136,15 @@ nav ul li {
     margin: 70px 0;
 }
 
-
-
 .logo-icon {
     flex-shrink: 1;
-    flex-basis: 25%;
+    flex-basis: 20%;
     display: grid;
     place-items: center;
 }
 
-
-
 .logo-icon img {
-    width: 125px;
+    width: 100px;
     transition: all ease 500ms;
 }
 
@@ -183,6 +160,12 @@ nav ul li {
 .logo-icon img:hover {
     transform: scale(1.15);
 }
+
+
+
+/*********************/
+/* PROJECTS */
+/*********************/
 
 .slide {
     max-height: 500px;
@@ -228,6 +211,8 @@ nav ul li {
 
 }
 
+/* PAGINATION */
+
 .btn-paginate {
     width: 1.5em;
     height: 1em;
@@ -252,19 +237,10 @@ nav ul li {
     cursor: pointer;
 }
 
-.spaced {
-    margin-top: 20vh !important;
-    margin-bottom: 15vh !important;
-}
+/*****************/
 
-.spaced-sm {
-    margin-top: 10vh !important;
-    margin-bottom: 10vh !important;
-}
 
-.spaced-btm {
-    margin-bottom: 20vh !important;
-}
+/* COLLECTION BANNER */
 
 .banner {
     background-color: var(--primary-color);
@@ -289,48 +265,10 @@ nav ul li {
     }
 }
 
-.form-set {
-    display: flex;
-    flex-direction: column;
-}
 
-.form-label {
-    font-size: 0;
-}
-
-.form-input {
-    background-color: var(--white-color);
-    border: none;
-    padding: 1em;
-    border-radius: 0.2em;
-    font-family: inherit;
-    font-size: 0.8em;
-}
-
-textarea.form-input {
-    resize:vertical;
-    min-height: 6em;
-    max-height: 20em;
-}
-
-.contact-form {
-    display: grid;
-    grid-template-areas: 
-        "fname org"
-        "email phone"
-        "subject subject"
-        "message message"
-        "button button"
-    ;
-    grid-template-columns: 1fr 1fr;
-    gap: 1em;
-    row-gap: 1.5em;
-}
-
-.form-send {
-    display:flex;
-    justify-content: flex-end;
-}
+/*********************/
+/* EXPERIENCE */
+/*********************/
 
 
 .card-grid {
@@ -382,3 +320,51 @@ textarea.form-input {
 .card-body p.card-content {
     margin: 1em 0;
 }
+
+/*********************/
+/* CONTACT */
+/*********************/
+
+.form-set {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-label {
+    font-size: 0;
+}
+
+.form-input {
+    background-color: var(--white-color);
+    border: none;
+    padding: 1em;
+    border-radius: 0.2em;
+    font-family: inherit;
+    font-size: 0.8em;
+}
+
+textarea.form-input {
+    resize:vertical;
+    min-height: 6em;
+    max-height: 20em;
+}
+
+.contact-form {
+    display: grid;
+    grid-template-areas: 
+        "fname org"
+        "email phone"
+        "subject subject"
+        "message message"
+        "button button"
+    ;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    row-gap: 1.5em;
+}
+
+.form-send {
+    display:flex;
+    justify-content: flex-end;
+}
+

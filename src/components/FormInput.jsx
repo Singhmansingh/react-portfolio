@@ -1,3 +1,6 @@
+
+// Renders a stylistically consistant form input
+
 export function FormInput(props){
     return(
         <div className="form-set" style={{gridArea:props.name}}>

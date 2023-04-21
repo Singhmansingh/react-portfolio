@@ -80,3 +80,47 @@ p.sm {
   font-size: 0.8em;
   line-height: 2;
 }
+
+.btn {
+  border: 2px solid #2f2f2f;
+  background-color: #fff;
+  padding: 0.2em 2em;
+  font:inherit;
+  font-size: 0.8em;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.377);
+  font-weight: 600;
+  transform: all ease 250ms;
+  color: var(--primary-color)
+}
+
+.btn:hover {
+  cursor: pointer;
+
+
+}
+
+.btn:active {
+      transform: translate(1px,1px);
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.377);
+}
+
+
+.wrapper {
+  max-width: 1080px;
+  margin: auto;
+  padding: 0 1em;
+}
+
+.spaced {
+  margin-top: 20vh !important;
+  margin-bottom: 15vh !important;
+}
+
+.spaced-sm {
+  margin-top: 10vh !important;
+  margin-bottom: 10vh !important;
+}
+
+.spaced-btm {
+  margin-bottom: 20vh !important;
+}

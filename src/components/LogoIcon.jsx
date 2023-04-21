@@ -1,5 +1,6 @@
+// Logo with a shadow background, on mhover will animate growing
 export default function LogoIcon(props){
-    const imgSrc = "http://console.shavinsingh.tech/storage/"
+
     return (
         <div className="logo-icon" >
             

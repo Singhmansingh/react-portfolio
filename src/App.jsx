@@ -50,12 +50,9 @@ function App() {
         <Navbar locations={NAVBAR}/>
       </header>
       <main>
-        {/* <Landing id={'landing'}/>
-        <About id={'about'}/>
-        <Projects id={'projects'}/>
-        <Experience id={'experience'} />
-        <Contact id={'contact'}/> */}
+        
       {
+        /** Map the routes based on the the Navbar for modularity */
         NAVBAR.map(section => section.element())
       }
       </main>

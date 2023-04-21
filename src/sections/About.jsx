@@ -8,7 +8,6 @@ export default function About(props){
             var response = await fetch("https://console.shavinsingh.tech/api/skills");
             
             var _icons = await response.json();
-            console.log(_icons);
             setIcons(_icons);
         }
         
@@ -16,16 +15,17 @@ export default function About(props){
     },[]);
 
 
-    const items = [
-        "http://singhmansingh.games/images/everyone-is-john.png",
-        "http://singhmansingh.games/images/the-witch-is-dead.png",
-        "http://singhmansingh.games/images/adventure-skeletons.png",
-        "http://singhmansingh.games/images/goblin-punks.png",
-        "http://singhmansingh.games/images/lasers-and-feelings.png",
-        "http://singhmansingh.games/images/honey-heist.png",
-        "http://singhmansingh.games/images/outbreak-undead.png",
-        "http://singhmansingh.games/images/ten-candles.png"
-    ]
+    // Meant for carousel, unable to implement in time
+    // const items = [
+    //     "http://singhmansingh.games/images/everyone-is-john.png",
+    //     "http://singhmansingh.games/images/the-witch-is-dead.png",
+    //     "http://singhmansingh.games/images/adventure-skeletons.png",
+    //     "http://singhmansingh.games/images/goblin-punks.png",
+    //     "http://singhmansingh.games/images/lasers-and-feelings.png",
+    //     "http://singhmansingh.games/images/honey-heist.png",
+    //     "http://singhmansingh.games/images/outbreak-undead.png",
+    //     "http://singhmansingh.games/images/ten-candles.png"
+    // ]
 
     return(
         <section id={props.id} className="spaced">

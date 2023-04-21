@@ -1,5 +1,8 @@
 import { useState } from "react";
 
+
+// Render a vertically scrolling list of images, not currently in use
+
 export default function Carousel(props){
 
     return(
@@ -14,10 +17,6 @@ export function CarouselItem(props){
     const width = 250;
     const transitionSpeed = 5000;
     const disabled = false;
-    // setInterval(()=> {
-    //     setPosition(position + 1);
-    //     console.log("tick");
-    // },transitionSpeed);
 
     return(
         <div className="carousel-item" 
