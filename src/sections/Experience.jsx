@@ -5,7 +5,7 @@ export function Experience(props){
 
     useEffect(()=> {
         async function getExperience(){
-            var res = await fetch("http://console.shavinsingh.tech/api/experiences");
+            var res = await fetch("https://console.shavinsingh.tech/api/experiences");
             var data = await res.json();
             setExperiences(data);
         }

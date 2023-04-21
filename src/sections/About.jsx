@@ -5,7 +5,7 @@ export default function About(props){
     const [icons, setIcons] = useState([]);
     useEffect(()=>{
         async function getIcons(){
-            var response = await fetch("http://console.shavinsingh.tech/api/skills");
+            var response = await fetch("https://console.shavinsingh.tech/api/skills");
             
             var _icons = await response.json();
             console.log(_icons);

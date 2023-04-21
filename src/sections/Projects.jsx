@@ -8,7 +8,7 @@ export default function Projects(props){
 
     useEffect(()=>{
         async function getProjects(){
-            var res = await fetch('http://console.shavinsingh.tech/api/projects');
+            var res = await fetch('https://console.shavinsingh.tech/api/projects');
             var data = await res.json();
             setProjects(data);
         }
