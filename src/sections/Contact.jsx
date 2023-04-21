@@ -31,7 +31,7 @@ export function Contact(props){
             <div>
                 <h2>Get Connected</h2>
                 <p>Let's Connect! Drop me a message and let's bring your ideas to life.</p>
-                <form className="contact-form">
+                <form className="contact-form" action="#" method="post">
                     <FormInput id="fname" label="Your Name" name="fname"/>
                     <FormInput id="org" label="Organization" name="org"/>
 

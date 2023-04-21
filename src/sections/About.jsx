@@ -37,7 +37,7 @@ export default function About(props){
                 <p>With a background in <strong>Business Technology Management</strong>, <strong>Web Development</strong> and <strong>Computer Science</strong>, I aim to make complex systems more accessible and user-friendly for everyone, regardless of their technical background.</p>
 
                 </div>
-                <Carousel items={items}/>
+                {/* <Carousel items={items}/> */}
             </div>
         <div id="myMission" className="wrapper spaced">
 
