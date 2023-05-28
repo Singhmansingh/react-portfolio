@@ -8,6 +8,7 @@ export function FormInput(props){
             {
                 props.rows ?
                 <textarea placeholder={props.label} 
+                disabled
                 className="form-input" 
                 id={props.id} 
                 name={props.name} 
@@ -16,6 +17,8 @@ export function FormInput(props){
                 ></textarea>
                 :
                 <input 
+                disabled
+
                 placeholder={props.label} 
                 className="form-input" 
                 id={props.id} 
